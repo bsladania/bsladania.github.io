@@ -14,7 +14,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         .container {
@@ -31,6 +31,15 @@
             border-radius: 4px;
             padding: 20px;
             margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
         }
         footer {
             background-color: #333;
@@ -41,6 +50,22 @@
             width: 100%;
             bottom: 0;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #555;
+        }
     </style>
 </head>
 <body>
@@ -50,13 +75,21 @@
         </div>
     </header>
     
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+    </nav>
+    
     <div id="main" class="container">
-        <section class="card">
+        <section id="about" class="card">
             <h2>About Me</h2>
+            <img src="path/to/your/image.jpg" alt="About Me Image">
             <p>Hello! I am a Senior Data Engineer with extensive experience in building and optimizing data pipelines, architectures, and data sets. I am passionate about leveraging data to drive business solutions and improve decision-making.</p>
         </section>
         
-        <section class="card">
+        <section id="skills" class="card">
             <h2>Skills</h2>
             <ul>
                 <li>Data Pipeline Development</li>
@@ -70,7 +103,7 @@
             </ul>
         </section>
         
-        <section class="card">
+        <section id="experience" class="card">
             <h2>Experience</h2>
             <h3>Senior Data Engineer at XYZ Company</h3>
             <p><em>January 2020 - Present</em></p>
@@ -89,14 +122,14 @@
             </ul>
         </section>
         
-        <section class="card">
+        <section id="education" class="card">
             <h2>Education</h2>
             <p>Bachelor of Science in Computer Science, University of Somewhere, 2015</p>
         </section>
     </div>
     
     <footer>
-        <p>© 2025 </p>
+        <p>© 2025 Senior Data Engineer Portfolio</p>
     </footer>
 </body>
 </html>
