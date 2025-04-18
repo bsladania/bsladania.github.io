@@ -4,190 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bikramjeet Ladania | Senior Data Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: url('c91bbc64-2943-4bd0-bad7-e85b129b24fc.png') no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      background-size: cover;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header h2 {
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
-    nav {
-      background: white;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav a {
-      text-decoration: none;
-      color: #555;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    h3 {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: #222;
-    }
-    .skills, .experience, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      background: #222;
-      color: white;
-      margin-top: 2rem;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.8rem 1.5rem;
-      background: #0077b5;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-    .btn:hover {
-      background: #005582;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Bikramjeet Ladania</h1>
-  <h2>Senior Data Engineer | Azure Specialist | Databricks Expert</h2>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h3>🌟 About Me</h3>
-  <p>
-    Senior Data Engineer with 6+ years of experience designing scalable Azure-based solutions, Databricks frameworks, and advanced analytics systems. 
-    Passionate about cloud transformation and data-driven decision making. Pursuing Bachelor's in Software Engineering (Online) from McMaster University.
-  </p>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h3>Hello I'm</h3>
+    <h1>Bikramjeet Ladania</h1>
+    <h2>— Senior Data Engineer</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/bikramjeet-ladania/" target="_blank">LinkedIn</a>
+      <a href="mailto:Bikramjeetsingh@live.com">Email</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="c8402271-e90b-4edd-8099-9eb89ab67b46.png" alt="Bikramjeet Image">
+  </div>
 </section>
 
-<section id="skills">
-  <h3>🚀 Skills and Certifications</h3>
-  <div class="skills">
-    <div class="card">
-      <h4>Cloud</h4>
-      <p>Azure Synapse, Data Factory, Logic Apps, Azure SQL Database</p>
+<!-- About Section -->
+<section class="about">
+  <div class="about-img">
+    <img src="0a6eea3e-4ce7-453c-be58-9bc7d3653151.png" alt="About">
+  </div>
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>I'm a passionate Senior Data Engineer with 6+ years of experience turning raw data into actionable insights using Azure, Databricks, and scalable architectures. Currently pursuing a Bachelor's in Software Engineering at McMaster University to stay at the forefront of cloud innovation.</p>
+    <p>I specialize in building data lakes, automating ETL pipelines, and architecting cloud-first solutions for enterprise clients like SGI and SeaSpan.</p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills">
+  <h2>Skills & Tools</h2>
+  <div class="skills-content">
+    <ul>
+      <li>Azure Synapse, Azure Data Factory, Logic Apps</li>
+      <li>Databricks, Spark, PySpark</li>
+      <li>Python, C#, .NET Core</li>
+      <li>Terraform (IaC), SQL, PostgreSQL, SSIS, SSRS</li>
+      <li>Certifications: DP-203, DP-600, Databricks Professional, Terraform Associate</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience">
+  <h2>Work Experience</h2>
+  <div class="timeline">
+    <div class="timeline-box">
+      <img src="084b6d09-68d1-4477-aae5-bad43a77e2b3.png" alt="Adastra Logo">
+      <div>
+        <h3>Senior Data Engineer</h3>
+        <p>Adastra North America (SGI Canada) | May 2022 – Present</p>
+        <p>Built Synapse platforms, automated ingestion, and designed proactive data pipelines on Azure.</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>Big Data</h4>
-      <p>Databricks, Spark, PySpark</p>
+
+    <div class="timeline-box">
+      <img src="473835ac-9393-408c-a802-9d25840b0e87.png" alt="Seaspan Logo">
+      <div>
+        <h3>Solution Architect</h3>
+        <p>SeaSpan Ship Management Ltd. | Aug 2024 – Nov 2024</p>
+        <p>Led IoT migration to Microsoft Fabric using Medallion architecture and Spark optimization.</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>Programming</h4>
-      <p>Python, C#, .NET Core, VBA</p>
-    </div>
-    <div class="card">
-      <h4>Certifications</h4>
-      <p>Azure Data Engineer (DP-203), Fabric Analytics (DP-600), Databricks Professional, Terraform Associate</p>
+
+    <div class="timeline-box">
+      <img src="90bc9c37-0f32-4b98-bdcc-745feb98cb9e.png" alt="InvestorCom Logo">
+      <div>
+        <h3>Software Developer</h3>
+        <p>InvestorCOM Inc. | Sep 2021 – Apr 2022</p>
+        <p>Modernized ETL pipelines and built microservices using .NET Core and Azure Data Factory.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="experience">
-  <h3>🏢 Experience</h3>
-  <div class="experience">
-    <div class="card">
-      <h4>Senior Data Engineer</h4>
-      <p><b>Adastra North America (SGI Canada)</b> <br>May 2022 – Present</p>
-      <p>Provisioned Azure Synapse using Terraform, built scalable ingestion pipelines, and developed custom monitoring frameworks.</p>
-    </div>
-    <div class="card">
-      <h4>Solution Architect</h4>
-      <p><b>SeaSpan Ship Management Ltd.</b> <br>Aug 2024 – Nov 2024</p>
-      <p>Designed IoT Medallion architecture, optimized Fabric workflows, and developed migration pipelines.</p>
-    </div>
-    <div class="card">
-      <h4>Software Developer</h4>
-      <p><b>InvestorCOM Inc.</b> <br>Sep 2021 – Apr 2022</p>
-      <p>Migrated ETL pipelines to ADF and built Microservices using .NET Core and Azure Logic Apps.</p>
-    </div>
-    <div class="card">
-      <h4>More Roles</h4>
-      <p>ETL Developer @ InvestorCOM | Data Analyst @ Cogeco Peer 1 | QA Analyst @ Finastra | Web Analyst @ West Corporation</p>
-    </div>
+<!-- Contact Section -->
+<section class="contact">
+  <h2>Get in Touch</h2>
+  <p>Let's build something amazing together!</p>
+  <div class="contact-buttons">
+    <a href="mailto:Bikramjeetsingh@live.com" class="btn">Email Me</a>
+    <a href="https://www.linkedin.com/in/bikramjeet-ladania/" class="btn" target="_blank">LinkedIn Profile</a>
   </div>
-</section>
-
-<section id="projects">
-  <h3>🛠️ Projects</h3>
-  <div class="projects">
-    <div class="card">
-      <h4>Azure Synapse Automation</h4>
-      <p>Provisioned Azure Synapse infrastructure using Terraform.</p>
-    </div>
-    <div class="card">
-      <h4>IoT Data Migration</h4>
-      <p>Migrated IoT data into Fabric Lakehouse using Spark and Medallion architecture.</p>
-    </div>
-    <div class="card">
-      <h4>Financial ETL Solutions</h4>
-      <p>Modernized financial data ETL using Azure Data Factory and Logic Apps.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <h3>📬 Contact Me</h3>
-  <p align="center">
-    <a class="btn" href="mailto:Bikramjeetsingh@live.com">Email Me</a>
-    <a class="btn" href="https://linkedin.com/in/bikramjeet-ladania" target="_blank">LinkedIn Profile</a>
-  </p>
 </section>
 
 <footer>
