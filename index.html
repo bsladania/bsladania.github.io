@@ -6,125 +6,31 @@
   <title>Bikramjeet Ladania | Senior Data Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0d1b2a;
-      color: #e0e1dd;
-    }
-    section {
-      padding: 4rem 10%;
-    }
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-      color: #ffd700;
-    }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      background: #1b263b;
-      padding-top: 6rem;
-    }
-    .hero-text h1 {
-      font-size: 3rem;
-    }
-    .hero-text h2 {
-      font-weight: 400;
-      margin-bottom: 2rem;
-      color: #e0aaff;
-    }
-    .hero-img img {
-      width: 300px;
-      border-radius: 10px;
-    }
-    .social-links a {
-      text-decoration: none;
-      margin-right: 1rem;
-      background: #ffd700;
-      color: #0d1b2a;
-      padding: 0.6rem 1rem;
-      border-radius: 5px;
-      font-weight: 600;
-    }
-    .section-light {
-      background: #e0e1dd;
-      color: #0d1b2a;
-    }
-    .section-dark {
-      background: #0d1b2a;
-      color: #e0e1dd;
-    }
-    .about-content, .education-content, .experience-content, .skills-content {
-      max-width: 1000px;
-      margin: auto;
-    }
-    .about-content img, .education-content img {
-      width: 300px;
-      border-radius: 20px;
-      margin-right: 2rem;
-    }
-    .about, .education {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
-    .about-text, .education-text {
-      flex: 1;
-    }
-    .btn {
-      display: inline-block;
-      background: #1b263b;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      margin-top: 1rem;
-      text-decoration: none;
-    }
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .timeline-box {
-      background: #1b263b;
-      padding: 2rem;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      color: #e0e1dd;
-    }
-    .timeline-box img {
-      width: 60px;
-      margin-right: 2rem;
-    }
-    ul.skills-list {
-      list-style: none;
-      padding: 0;
-    }
-    ul.skills-list li {
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
-    }
-    .contact-buttons {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    .contact-buttons .btn {
-      margin: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #1b263b;
-    }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #0d1b2a; color: #e0e1dd;}
+    section { padding: 4rem 10%; }
+    h2 { font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; color: #ffd700; }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; background: #1b263b; padding-top: 6rem; }
+    .hero-text h1 { font-size: 3rem; }
+    .hero-text h2 { font-weight: 400; margin-bottom: 2rem; color: #e0aaff; }
+    .hero-img img { width: 300px; border-radius: 10px; }
+    .social-links a { text-decoration: none; margin-right: 1rem; background: #ffd700; color: #0d1b2a; padding: 0.6rem 1rem; border-radius: 5px; font-weight: 600; }
+    .section-light { background: #e0e1dd; color: #0d1b2a; }
+    .section-dark { background: #0d1b2a; color: #e0e1dd; }
+    .about, .education-section, .activities { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; }
+    .about img, .education-section img, .activities img { width: 300px; border-radius: 20px; }
+    .about-text, .education-text, .activities-text { flex: 1; }
+    .btn { display: inline-block; background: #1b263b; color: white; padding: 0.8rem 1.5rem; border-radius: 30px; margin-top: 1rem; text-decoration: none; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .skill-card { background: #1b263b; padding: 1.5rem; border-radius: 10px; text-align: center; transition: transform 0.3s; }
+    .skill-card:hover { transform: translateY(-8px); background: #2a3a5b; }
+    .skill-card img { width: 50px; margin-bottom: 1rem; }
+    .faq-container { max-width: 1000px; margin: auto; }
+    details { background: #e0e1dd; color: #0d1b2a; margin-bottom: 1rem; padding: 1rem; border-radius: 10px; }
+    summary { font-weight: 600; cursor: pointer; }
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; background: #1b263b; }
   </style>
 </head>
+
 <body>
 
 <!-- Hero Section -->
@@ -132,49 +38,49 @@
   <div class="hero-text">
     <h3>Hello I'm</h3>
     <h1>Bikramjeet Ladania</h1>
-    <h2>-Senior Data Engineer</h2>
+    <h2>Senior Data Engineer</h2>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/bikramjeet-ladania/" target="_blank">LinkedIn</a>
+      <a href="https://linkedin.com/in/bikramjeet-ladania" target="_blank">LinkedIn</a>
       <a href="mailto:Bikramjeetsingh@live.com">Email</a>
     </div>
   </div>
   <div class="hero-img">
-    <img src="c8402271-e90b-4edd-8099-9eb89ab67b46.png" alt="Bikramjeet Image">
+    <img src="c8402271-e90b-4edd-8099-9eb89ab67b46.png" alt="Bikramjeet">
   </div>
 </section>
 
-<!-- About Me Section -->
+<!-- About Section -->
 <section class="section-light">
   <h2>About Me</h2>
-  <div class="about about-content">
+  <div class="about">
     <img src="0a6eea3e-4ce7-453c-be58-9bc7d3653151.png" alt="About">
     <div class="about-text">
-      <p>Experienced Senior Data Engineer specializing in Azure cloud services, Databricks, scalable data lakes, and ETL frameworks. Building cloud-first architectures to help businesses gain powerful insights from their data.</p>
-      <p>Currently pursuing Bachelor's in Software Engineering at McMaster University, passionate about continuous learning and data-driven innovations.</p>
+      <p>Experienced Senior Data Engineer specializing in Azure cloud services, Databricks, scalable data lakes, and ETL frameworks. Passionate about delivering high-impact, data-driven solutions for businesses. Pursuing Bachelor's in Software Engineering from McMaster University.</p>
       <a href="resume.pdf" class="btn" download>Download Resume</a>
     </div>
   </div>
 </section>
 
-<!-- Education & Certifications Section -->
+<!-- Education and Certifications Section -->
 <section class="section-dark">
   <h2>Education & Certifications</h2>
-  <div class="education education-content">
-    <img src="mcmaster.png" alt="Education">
-    <img src="/imgs/certifications.png" alt="Certifications">
-    <div class="education-text">
-      <h3>McMaster University</h3>
-      <p>Bachelor of Software Engineering (Part-time Online) | 2025 – Present</p>
-      <h3>Sheridan College</h3>
-      <p>Software Development and Network Engineering | 2015 – 2018 (High Honours)</p>
-      <h4>Certifications:</h4>
+  <div class="education-section">
+    <div style="flex: 1;">
+      <img src="54e60f3c-4f76-48fd-899e-97a620576bbe.png" alt="Education">
+      <h3 style="color: #ffd700;">McMaster University</h3>
+      <p>Bachelor of Software Engineering (2025 - Present)</p>
+      <h3 style="color: #ffd700;">Sheridan College</h3>
+      <p>Software Development and Network Engineering (High Honours)</p>
+    </div>
+    <div style="flex: 1;">
+      <img src="0a6eea3e-4ce7-453c-be58-9bc7d3653151.png" alt="Certifications">
+      <h3 style="color: #ffd700;">Certifications</h3>
       <ul>
         <li>Azure Data Engineer Associate (DP-203)</li>
         <li>Fabric Analytics Engineer Associate (DP-600)</li>
         <li>Azure Developer Associate (AZ-204)</li>
         <li>Databricks Data Engineer Professional</li>
-        <li>Databricks Data Engineer Associate</li>
-        <li>HashiCorp Terraform Associate</li>
+        <li>Terraform Associate</li>
       </ul>
     </div>
   </div>
@@ -183,83 +89,62 @@
 <!-- Work Experience Section -->
 <section class="section-light">
   <h2>Work Experience</h2>
-  <div class="experience-content timeline">
-    <div class="timeline-box">
-      <img src="084b6d09-68d1-4477-aae5-bad43a77e2b3.png" alt="Adastra Logo">
-      <div>
-        <h3>Senior Data Engineer — Adastra North America</h3>
-        <p>SGI Canada | May 2022 – Present</p>
-        <p>Provisioned Synapse Analytics, automated ingestion pipelines, built intelligent monitoring frameworks using Logic Apps.</p>
-      </div>
-    </div>
-    <div class="timeline-box">
-      <img src="473835ac-9393-408c-a802-9d25840b0e87.png" alt="SeaSpan Logo">
-      <div>
-        <h3>Solution Architect — SeaSpan Ship Management</h3>
-        <p>Aug 2024 – Nov 2024</p>
-        <p>Designed IoT migration to Microsoft Fabric using Medallion architecture and Spark optimization.</p>
-      </div>
-    </div>
-    <div class="timeline-box">
-      <img src="90bc9c37-0f32-4b98-bdcc-745feb98cb9e.png" alt="InvestorCom Logo">
-      <div>
-        <h3>Software Developer — InvestorCOM Inc.</h3>
-        <p>Sep 2021 – Apr 2022</p>
-        <p>Migrated legacy ETL to Azure Data Factory; developed Microservices and data pipelines.</p>
-      </div>
-    </div>
-    <div class="timeline-box">
-      <div>
-        <h3>Jr. ETL & Data Developer — InvestorCOM Inc.</h3>
-        <p>Jul 2019 – Aug 2021</p>
-        <p>Built ETL pipelines for address correction and regulatory management applications on Azure platform.</p>
-      </div>
-    </div>
-    <div class="timeline-box">
-      <div>
-        <h3>Data Analyst Co-op — Cogeco Peer 1</h3>
-        <p>May 2018 – Jan 2019</p>
-        <p>Data migration, Salesforce integrations, and financial reporting automations using SQL & SSIS.</p>
-      </div>
-    </div>
-    <div class="timeline-box">
-      <div>
-        <h3>Quality Assurance Analyst Co-op — Finastra</h3>
-        <p>Sep 2017 – Jan 2018</p>
-        <p>Enhanced ETL pipelines, optimized SSIS packages, built SSRS reporting dashboards.</p>
-      </div>
-    </div>
-    <div class="timeline-box">
-      <div>
-        <h3>Web Analyst Co-op — West Corporation</h3>
-        <p>Jan 2017 – Apr 2017</p>
-        <p>Developed responsive ASP.NET web applications; managed SEO and Google Analytics implementation.</p>
-      </div>
-    </div>
+  <div class="timeline">
+    <div class="timeline-box"><h3>Senior Data Engineer — Adastra North America (SGI Canada)</h3><p>2022–Present</p><p>Provisioned Synapse, automated data lakes, monitoring using Azure OpenAI.</p></div>
+    <div class="timeline-box"><h3>Solution Architect — SeaSpan Ship Management</h3><p>2024</p><p>IoT migration with Microsoft Fabric and Spark Medallion Architecture.</p></div>
+    <div class="timeline-box"><h3>Software Developer — InvestorCOM Inc.</h3><p>2021–2022</p><p>Migrated ETL pipelines to Azure Data Factory, developed Microservices.</p></div>
+    <!-- Add the rest of your roles here if needed -->
   </div>
 </section>
 
 <!-- Skills & Tools Section -->
 <section class="section-dark">
   <h2>Skills & Tools</h2>
-  <div class="skills-content">
-    <ul class="skills-list">
-      <li>Azure Cloud: Synapse, Data Factory, Logic Apps, Azure SQL Database</li>
-      <li>Big Data Engineering: Databricks, Spark, PySpark, Lakehouse Architecture</li>
-      <li>Programming Languages: Python, C#, .NET Core, VBA, SQL</li>
-      <li>ETL Development: SSIS, ADF Pipelines, Durable Functions, Data Migration</li>
-      <li>DevOps & Infra: Terraform (IaC), Git, Azure DevOps</li>
-      <li>Reporting Tools: SSRS, Salesforce, Power BI (Basic)</li>
-    </ul>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Azure">
+      <h4>Azure Synapse, Data Factory</h4>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Databricks">
+      <h4>Databricks, PySpark</h4>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="Coding">
+      <h4>Python, C#, SQL</h4>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" alt="Terraform">
+      <h4>Terraform (IaC)</h4>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/753/753318.png" alt="Data Migration">
+      <h4>ETL Pipelines, Data Migration</h4>
+    </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Interests & Activities Section -->
 <section class="section-light">
-  <h2>Get in Touch</h2>
-  <div class="contact-buttons">
-    <a href="mailto:Bikramjeetsingh@live.com" class="btn">Email Me</a>
-    <a href="https://www.linkedin.com/in/bikramjeet-ladania/" class="btn" target="_blank">LinkedIn Profile</a>
+  <h2>Activities & Interests</h2>
+  <div class="activities">
+    <img src="baf76e75-c9fc-45f0-9feb-7083818ad76e.png" alt="Activities">
+    <div class="activities-text">
+      <p>🚀 IT Consultant @ TandooriTwist Pizza (Website, Ordering Platform, Marketing)</p>
+      <p>🌐 Active Microsoft Partner Event participant</p>
+      <p>📖 Technology blogger and AI cloud enthusiast</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-dark">
+  <h2>FAQs</h2>
+  <div class="faq-container">
+    <details><summary>Why should you hire me?</summary><p>With 6+ years of Azure Cloud and Data Engineering experience, I build scalable, automated solutions that unlock business intelligence and drive growth.</p></details>
+    <details><summary>How do I approach cloud migration projects?</summary><p>I design future-proof Azure architectures using best practices like IaC (Terraform), Lakehouse frameworks, and automated ingestion pipelines.</p></details>
+    <details><summary>What makes me a strong fit for enterprise solutions?</summary><p>My experience with Databricks, Synapse, Fabric, and OpenAI integration ensures seamless enterprise data modernization.</p></details>
+    <details><summary>How do I keep skills updated?</summary><p>I actively learn through Microsoft certifications, tech blogs, and real-world implementation across industries.</p></details>
   </div>
 </section>
 
