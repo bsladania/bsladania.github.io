@@ -154,37 +154,43 @@
       flex: 1;
     }
     /* Education & Certifications */
-    .edu-cert {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3rem;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .education, .certifications {
-      flex: 1 1 45%;
-      background: #e0e1dd;
-      color: #0d1b2a;
-      padding: 2rem;
-      border-radius: 20px;
-      text-align: center;
-    }
-    .education img, .certifications img {
-      width: 100%;
-      height: auto;
-      max-height: 250px;
-      object-fit: contain;
-      border-radius: 20px;
-      margin-bottom: 1rem;
-    }
-    .education h3, .certifications h3 {
-      color: #ffd700;
-    }
-    ul {
-      list-style: disc inside;
-      padding: 0;
-      text-align: left;
-    }
+    .edu-cert-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.edu-cert-box {
+  background: #ffffff;
+  color: #0d1b2a;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.edu-cert-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ffd700;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .edu-cert-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
     /* FAQ Section */
     details {
       background: #e0e1dd;
@@ -265,7 +271,7 @@
     </div>
     <div class="skill-card">
       <img src="/imgs/coding.png" alt="Programming">
-      <h4>Python, SQL, Scala, C#, Java</h4>
+      <h4>Python, SQL, Scala, C#, Java, VBA (Excel Macros)</h4>
     </div>
     <div class="skill-card">
       <img src="/imgs/database.png" alt="database">
@@ -281,17 +287,21 @@
 <!-- Education & Certifications -->
 <section class="section-light">
   <h2>Education & Certifications</h2>
-  <div class="edu-cert">
-    <div class="education">
-      <img src="/imgs/mcmaster.png" alt="Education" />
-      <h2>McMaster University</h2>
-      <strong>Bachelor of Software Engineering (2025 – Present)</strong>
-      <h2>Sheridan College</h2>
-      <strong>Software Development and Network Engineering (High Honours)</strong>
+  <div class="edu-cert-flex">
+    <!-- Education Box -->
+    <div class="edu-cert-box">
+      <img src="/imgs/mcmasterpng" alt="McMaster University" />
+      <h3 class="highlight">McMaster University</h3>
+      <p>Bachelor of Software Engineering (2025 – Present)</p>
+
+      <h3 class="highlight">Sheridan College</h3>
+      <p>Software Development and Network Engineering (High Honours)</p>
     </div>
-    <div class="certifications">
+
+    <!-- Certifications Box -->
+    <div class="edu-cert-box">
       <img src="/imgs/certifications.png" alt="Certifications" />
-      <h3>Certifications</h3>
+      <h3 class="highlight">Certifications</h3>
       <ul>
         <li>Azure Data Engineer Associate (DP-203)</li>
         <li>Fabric Analytics Engineer Associate (DP-600)</li>
