@@ -51,6 +51,7 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
+  margin-top: 1.5rem;
   border: 4px solid #ffd700; /* Golden border */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -79,15 +80,7 @@
     margin-right: 1rem;
     font-weight: bold;
   }
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-text, .hero-image {
-      flex: unset;
-    }
-  }
+
     /* About Section */
     .about, .edu-cert, .activities {
       display: flex;
@@ -185,12 +178,6 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-  .edu-cert-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-}
     /* FAQ Section */
     details {
       background: #e0e1dd;
@@ -209,19 +196,34 @@
       text-align: center;
       font-size: 0.9rem;
     }
-    @media (max-width: 768px) {
-      .about, .edu-cert, .activities {
-        flex-direction: column;
-      }
-      .education, .certifications {
-        flex: 1 1 100%;
-        max-width: 500px;
-      }
-      .work-card {
-        flex-direction: column;
-        text-align: center;
-      }
+
+  @media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
     }
+    .hero-text, .hero-image {
+      flex: unset;
+    }
+    .hero-image {
+    max-width: 80%;
+    }
+  .edu-cert-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about, .edu-cert, .activities {
+    flex-direction: column;
+  }
+  .education, .certifications {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
+  .work-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
   </style>
 </head>
 
@@ -393,9 +395,10 @@
   <div class="activities">
     <img src="/imgs/interest.jpg" alt="Activities" />
     <div class="activities-text">
-      <p>🚀 IT Consultant @ TandooriTwist Pizza (Website, Marketing, Third-party Delivery Partnerships)</p>
-      <p>🌐 Active Microsoft Partner Event Participant</p>
-      <p>📖 Tech Blogger & AI Cloud Enthusiast</p>
+      <p>🚀 IT Consultant @ TandooriTwist Pizza (Website management, marketing campaigns, and third-party delivery partnerships)</p>
+      <p>🌐 Active participant in Microsoft Partner events, always exploring emerging cloud technologies</p>
+      <p>📖 Tech blogger and AI/cloud enthusiast, continuously learning and sharing insights</p>
+      <p>🤝 Passionate about mentorship — guiding aspiring data engineers and supporting the next generation of tech innovators </p>
     </div>
   </div>
 </section>
