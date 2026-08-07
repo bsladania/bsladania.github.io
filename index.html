@@ -1,204 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bikramjeet Ladania | Senior Data Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080b13" />
+  <meta name="description" content="Bikramjeet Ladania — Senior Data Engineer specializing in Azure, Databricks, Microsoft Fabric, Synapse, PySpark and enterprise data platforms." />
+  <title>Bikramjeet Ladania — Senior Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-text">
-    <h3>Hello I'm</h3>
-    <h1>Bikramjeet Ladania</h1>
-    <h2>— Senior Data Engineer</h2>
-    <div class="hero-buttons">
-      <a href="https://linkedin.com/in/bikramjeet-ladania" target="_blank">LinkedIn</a>
-      <a href="mailto:Bikramjeetsingh@live.com">Email</a>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="Home"><span class="brand-dot"></span><span>bikram<span class="muted">.data</span></span></a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a><a href="#stack">Stack</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="ghost-btn" href="https://github.com/bsladania" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a class="primary-btn small" href="mailto:Bikramjeetsingh@live.com">Let’s talk <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
     </div>
-  </div>
-  <div class="hero-image">
-    <img src="/imgs/Bikramjeet_at_Microsoft.jpeg" alt="Bikramjeet Photo" />
-  </div>
-</section>
+  </header>
 
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-aurora a1"></div><div class="hero-aurora a2"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><span class="pulse"></span> Senior Data Engineer · Kitchener, Canada</div>
+          <p class="eyebrow">AZURE · DATABRICKS · FABRIC · DATA PLATFORM ENGINEERING</p>
+          <h1>Building data platforms that are <span class="gradient-text">reliable by design.</span></h1>
+          <p class="hero-lede">I design and modernize enterprise data ecosystems — from ingestion frameworks and lakehouses to observability, IaC, Spark transformations and analytics-ready data products.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">Explore my work <span>↓</span></a>
+            <a class="secondary-btn" href="Bikramjeet_Ladania_Resume.pdf" target="_blank">View résumé ↗</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>6+</strong><span>years in data & cloud</span></div>
+            <div><strong>23</strong><span>public GitHub repos</span></div>
+            <div><strong>43%</strong><span>system performance gain</span></div>
+            <div><strong>80%</strong><span>manual validation reduced</span></div>
+          </div>
+        </div>
 
-<!-- About -->
-<section class="section-light">
-  <h2>About Me</h2>
-  <div class="about">
-    <img src="/imgs/profile_photo.jpeg" alt="About Me" />
-    <div class="about-text">
-      <p>As a Senior Data Engineer, I’m passionate about building modern data ecosystems that power smart business decisions. With over six years of experience designing Azure-based architectures, developing scalable pipelines, and leading cloud transformations, I thrive at the intersection of engineering and innovation. Whether optimizing enterprise data lakes or orchestrating seamless migration projects, my focus is always on creating solutions that are reliable, efficient, and future-ready.</p>
-      <p>I'm a strong believer in continuous learning and early adoption of transformative technologies like Azure OpenAI services, which I actively use to bring intelligent automation and smarter insights to data-driven platforms. For me, data isn’t just about storage or movement — it’s about unlocking stories that drive progress.</p>
-      <strong>Let’s turn data into opportunity, insight into action, and ideas into impact.</strong>
-    </div>
-  </div>
-</section>
-
-<!-- Skills -->
-<section class="section-dark">
-  <h2>Skills & Tools</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="/imgs/Azure.png" alt="Azure">
-      <h4>Fabric Analytics, Azure Synapse Analytics, Data Factory, OpenAI, Logic Apps, Azure Functions, Azure DevOps - CI/CD</h4>
-    </div>
-    <div class="skill-card">
-      <img src="/imgs/databricks.jpg" alt="Databricks">
-      <h4>Databricks, PySpark, Lakehouse, Unity Catalog</h4>
-    </div>
-    <div class="skill-card">
-      <img src="/imgs/coding.png" alt="Programming">
-      <h4>Python, SQL, Scala, C#, Java, VBA (Excel Macros)</h4>
-    </div>
-    <div class="skill-card">
-      <img src="/imgs/database.png" alt="database">
-      <h4>Dedicated SQL Pool, Azure SQL Database, Warehouse, Lakehouse, JSON, IOT, Parquet</h4>
-    </div>
-    <div class="skill-card">
-      <img src="/imgs/etl.png" alt="ETL">
-      <h4>ETL Pipelines, Data Migration, Medallion Architecture, Data Fabric Architecture, Lambda Architecture</h4>
-    </div>
-  </div>
-</section>
-
-<!-- Education & Certifications -->
-<section class="section-light">
-  <h2>Education & Certifications</h2>
-  <div class="edu-cert-flex">
-    <!-- Education Box -->
-    <div class="edu-cert-box">
-      <img src="/imgs/mcmaster.png" alt="McMaster University" />
-      <h3 class="highlight">McMaster University</h3>
-      <p>Bachelor of Software Engineering - Part-time Online (2025 – Present)</p>
-
-      <h3 class="highlight">Sheridan College</h3>
-      <p>Software Development and Network Engineering (High Honours) 2018</p>
-    </div>
-
-    <!-- Certifications Box -->
-    <div class="edu-cert-box">
-      <img src="/imgs/certifications.png" alt="Certifications" />
-      <h3 class="highlight">Certifications</h3>
-      <ul>
-        <li>Fabric Analytics Engineer Associate</li>
-        <li>Azure Data Engineer Associate</li>
-        <li>Databricks Data Engineer Associate</li>
-        <li>Databricks Data Engineer Professional</li>
-        <li>Azure Developer Associate</li>
-        <li>Azure DevOps Engineer Expert</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Work Experience -->
-<section class="section-dark">
-  <h2>Work Experience</h2>
-  <div class="work-grid">
-    <div class="work-card">
-      <img src="/imgs/SGI.png" alt="Adastra">
-      <div class="work-card-content">
-        <h3>Senior Data Engineer</h3>
-        <p>Saskatchewan Government Insurance (SGI Canada) | Solution Partner Adasatra North America | <strong>May 2022 – Present</strong></p>
-        <ul>
-          <li>Designed and implemented a scalable enterprise data ingestion framework, integrating multiple sources into the Data Lake and processing data through Integration and Consumer layers</li>
-          <li>Developed an intelligent monitoring framework using Azure Logic Apps, enabling custom alerts to proactively detect issues and ensure the reliability and optimal performance of data pipelines</li>
-        </ul>
+        <div class="hero-visual reveal delay-1">
+          <div class="portrait-wrap">
+            <div class="portrait-orbit orbit-1"></div><div class="portrait-orbit orbit-2"></div>
+            <div class="portrait-card">
+              <img src="assets/bikramjeet-microsoft.jpeg" alt="Bikramjeet Ladania at Microsoft" />
+              <div class="portrait-shade"></div>
+              <div class="portrait-badge"><span>BL</span><div><strong>Bikramjeet Ladania</strong><small>Senior Data Engineer</small></div></div>
+            </div>
+          </div>
+          <div class="pipeline-card float-card">
+            <div class="window-bar"><div><i></i><i></i><i></i></div><span>enterprise_data_platform.pipeline</span><b>LIVE</b></div>
+            <div class="pipeline-flow">
+              <div class="pipe-node"><span class="node-code">SRC</span><strong>Sources</strong><small>APIs · DBs · Files</small></div>
+              <span class="pipe-arrow">→</span>
+              <div class="pipe-node active"><span class="node-code">ING</span><strong>Ingest</strong><small>ADF · Synapse</small></div>
+              <span class="pipe-arrow">→</span>
+              <div class="pipe-node"><span class="node-code">TRN</span><strong>Transform</strong><small>Spark · Delta</small></div>
+              <span class="pipe-arrow">→</span>
+              <div class="pipe-node"><span class="node-code">SRV</span><strong>Serve</strong><small>SQL · Fabric</small></div>
+            </div>
+            <div class="terminal-line"><span>$</span> monitor --pipeline <em>healthy</em><i class="blink">▋</i></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="work-card">
-      <img src="/imgs/seaspan.png" alt="SeaSpan">
-      <div class="work-card-content">
-        <h3>Solution Architect</h3>
-        <p>SeaSpan Ship Management | Solution Partner Adasatra North America | <strong>Aug 2024 - Nov 2024</strong></p>
-         <ul>
-          <li>Developed and optimized Spark notebooks to ingest, clean, and transform IoT data, implementing a structured workflow to ensure seamless processing from Bronze to Gold layers in the Lakehouse</li>
-          <li>Built and orchestrated end-to-end data pipelines using the data warehouse framework, automating workflows to ensure seamless, reliable, and efficient data movement and transformation</li>
-        </ul>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="/imgs/investorcom.png" alt="InvestorCOM">
-      <div class="work-card-content">
-        <h3>Software Developer</h3>
-        <p>InvestorCOM Inc | <strong>Jul 2019 – Apr 2022 </strong></p>
-        <ul>
-          <li>Built an ETL pipeline for data consolidation & address correction which has optimized the system performance by 43% and reduced the printing & mailing cost significantly</li>
-          <li>Develop, deploy and maintain Microservice APIs and web applications for various financial institutions</li>
-        </ul>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="/imgs/cogecopeer1.png" alt="Cogeco Peer 1">
-      <div class="work-card-content">
-        <h3>Data Analyst Co-op</h3>
-        <p>Cogeco Peer 1 | <strong>May 2018 – Jan 2019</strong></p>
-        <ul>
-          <li>Data mined in legacy systems (PostgreSQL, SQL) and used SSIS/ETL pipelines to consolidate data in data warehouse</li>
-          <li>Produced interactive financial reports for each data migration wave to measure the impact on business</li>
-        </ul>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="/imgs/finastra.png" alt="Finastra">
-      <div class="work-card-content">
-        <h3>Quality Assurance Analyst Co-op</h3>
-        <p>Finastra | <strong>Sep 2017 – Jan 2018</strong></p>
-         <ul>
-          <li>Designed and implemented end-to-end data pipelines to extract, cleanse and load the data to Azure SQL database</li>
-          <li>Created, managed and deployed SSRS reports to internal server for analyzing the progress of various phases of projects</li>
-        </ul>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="/imgs/west.png" alt="West Corporation">
-      <div class="work-card-content">
-        <h3>Web Analyst Co-op</h3>
-        <p>West Corporation | <strong>Jan 2017 – Apr 2017</strong></p>
-        <ul>
-          <li>Implemented Google Analytics and SEO metadata to improve the ranking of websites in Google Search Engine</li>
-          <li>Developed responsive portfolio websites using HTML, CSS, JavaScript and ASP.NET framework</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Interests & Activities -->
-<section class="section-light">
-  <h2>Activities & Interests</h2>
-  <div class="activities">
-    <img src="/imgs/interest.jpg" alt="Activities" />
-    <div class="activities-text">
-      <p>🚀 IT Consultant @ TandooriTwist Pizza (Website management, marketing campaigns, and third-party delivery partnerships)</p>
-      <p>🌐 Active participant in Microsoft Partner events, always exploring emerging cloud technologies</p>
-      <p>📖 Tech blogger and AI/cloud enthusiast, continuously learning and sharing insights</p>
-      <p>🤝 Passionate about mentorship — guiding aspiring data engineers and supporting the next generation of tech innovators </p>
-    </div>
-  </div>
-</section>
+      <div class="tech-marquee">
+        <div class="marquee-track">
+          <span>MICROSOFT FABRIC</span><i>◆</i><span>AZURE SYNAPSE</span><i>◆</i><span>DATABRICKS</span><i>◆</i><span>PYSPARK</span><i>◆</i><span>TERRAFORM</span><i>◆</i><span>DATA FACTORY</span><i>◆</i><span>DELTA LAKE</span><i>◆</i><span>AZURE OPENAI</span><i>◆</i>
+          <span>MICROSOFT FABRIC</span><i>◆</i><span>AZURE SYNAPSE</span><i>◆</i><span>DATABRICKS</span><i>◆</i><span>PYSPARK</span><i>◆</i><span>TERRAFORM</span><i>◆</i><span>DATA FACTORY</span><i>◆</i><span>DELTA LAKE</span><i>◆</i><span>AZURE OPENAI</span><i>◆</i>
+        </div>
+      </div>
+    </section>
 
-<!-- FAQs -->
-<section class="section-dark">
-  <h2>FAQs</h2>
-  <div style="max-width: 800px; margin: auto;">
-    <details><summary>Why should you hire me?</summary><p>6+ years experience with Azure Cloud, Data Engineering, and Business Intelligence.</p></details>
-    <details><summary>How do I approach cloud migration?</summary><p>Following best practices with Azure Synapse, Fabric, Databricks, Terraform (IaC).</p></details>
-    <details><summary>Why am I a strong enterprise fit?</summary><p>Scalable architectures, automation, proactive monitoring using OpenAI.</p></details>
-    <details><summary>How do I stay updated?</summary><p>Certifications, tech blogging, real-world project execution.</p></details>
-  </div>
-</section>
+    <section class="section content-section" id="about">
+      <div class="section-head reveal"><span class="command">$ whoami</span><h2>Engineer. Architect. <span>Problem solver.</span></h2><p>I work where enterprise data engineering meets platform reliability.</p></div>
+      <div class="about-grid">
+        <article class="glass-panel about-copy reveal">
+          <p class="lead">I’m a Senior Data Engineer with 6+ years of experience building Azure-based data solutions across insurance, financial services, shipping and cloud platforms.</p>
+          <p>My work spans reusable ingestion frameworks, Medallion/Lakehouse architectures, Spark processing, Synapse and SQL analytics, Terraform infrastructure, automated monitoring and production support. I care about systems that are not only fast — but observable, maintainable and safe to change.</p>
+          <p>I also experiment with GenAI for practical data-engineering workflows, including retrieval-augmented troubleshooting and SQL validation assistance.</p>
+          <div class="principles">
+            <div><span>01</span><strong>Build for reuse</strong><small>Frameworks over one-off pipelines.</small></div>
+            <div><span>02</span><strong>Observe everything</strong><small>Failures should explain themselves.</small></div>
+            <div><span>03</span><strong>Automate carefully</strong><small>IaC, CI/CD and repeatable controls.</small></div>
+          </div>
+        </article>
+        <aside class="facts-panel reveal delay-1">
+          <div class="facts-top"><span>// quick facts</span><span class="signal">● online</span></div>
+          <dl>
+            <div><dt>ROLE</dt><dd>Senior Data Engineer</dd></div>
+            <div><dt>COMPANY</dt><dd>Adastra North America</dd></div>
+            <div><dt>FOCUS</dt><dd>Azure · Databricks · Fabric</dd></div>
+            <div><dt>LOCATION</dt><dd>Kitchener, Ontario</dd></div>
+            <div><dt>EDUCATION</dt><dd>McMaster + Sheridan</dd></div>
+            <div><dt>GITHUB</dt><dd>23 public repositories</dd></div>
+          </dl>
+          <a href="https://www.linkedin.com/in/bikramjeet-ladania" target="_blank" rel="noreferrer">LinkedIn profile <span>↗</span></a>
+        </aside>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Bikramjeet Ladania | Transforming data into insight — and insight into action.</p>
-</footer>
+    <section class="section content-section" id="stack">
+      <div class="section-head reveal"><span class="command">$ tech --stack</span><h2>Tools I use to move from <span>raw → trusted.</span></h2><p>A practical stack for modern cloud data platforms.</p></div>
+      <div class="bento-grid">
+        <article class="bento big reveal"><div class="bento-icon">AZ</div><span class="mini-label">CLOUD DATA</span><h3>Azure data platform</h3><p>Synapse Analytics, Data Factory, ADLS, Azure SQL, Logic Apps, Functions, Key Vault and Azure DevOps.</p><div class="chips"><span>Synapse</span><span>ADF</span><span>ADLS</span><span>Azure SQL</span><span>Logic Apps</span></div></article>
+        <article class="bento reveal delay-1"><div class="bento-icon purple">DB</div><span class="mini-label">LAKEHOUSE</span><h3>Databricks + Spark</h3><p>PySpark, Spark notebooks, Delta Lake, Unity Catalog and scalable transformation workflows.</p><div class="chips"><span>PySpark</span><span>Delta</span><span>Unity Catalog</span></div></article>
+        <article class="bento reveal delay-2"><div class="bento-icon orange">FB</div><span class="mini-label">ANALYTICS</span><h3>Microsoft Fabric</h3><p>Lakehouse and warehouse patterns, OneLake-centric engineering and Medallion architecture.</p><div class="chips"><span>Lakehouse</span><span>Warehouse</span><span>Notebooks</span></div></article>
+        <article class="bento reveal"><div class="bento-icon green">SQL</div><span class="mini-label">DATA STORES</span><h3>SQL + modeling</h3><p>Dedicated SQL Pool, Azure SQL Database, SQL Server, PostgreSQL, dimensional and integration models.</p><div class="chips"><span>SQL</span><span>T-SQL</span><span>Warehouse</span></div></article>
+        <article class="bento reveal delay-1"><div class="bento-icon cyan">IaC</div><span class="mini-label">PLATFORM</span><h3>Automation & delivery</h3><p>Terraform, CI/CD, Git, reusable deployment patterns, monitoring and operational automation.</p><div class="chips"><span>Terraform</span><span>CI/CD</span><span>Git</span></div></article>
+        <article class="bento big reveal delay-2"><div class="bento-icon pink">AI</div><span class="mini-label">APPLIED GENAI</span><h3>AI for data engineering</h3><p>Azure OpenAI and Databricks LLM workflows for RAG, runbook retrieval, troubleshooting guidance and validation assistance.</p><div class="chips"><span>RAG</span><span>Vector Search</span><span>LLMs</span><span>Agents</span></div></article>
+      </div>
+    </section>
 
+    <section class="section content-section" id="experience">
+      <div class="section-head reveal"><span class="command">$ experience --timeline</span><h2>Enterprise data engineering, <span>end to end.</span></h2><p>From co-op foundations to architecture and senior engineering ownership.</p></div>
+      <div class="timeline">
+        <article class="timeline-item featured reveal"><div class="timeline-marker"></div><div class="timeline-date">MAY 2022 — PRESENT</div><div class="timeline-card"><div class="role-top"><div><span class="role-kicker">ADASTRA NORTH AMERICA · SGI CANADA</span><h3>Senior Data Engineer</h3></div><span class="role-badge">CURRENT</span></div><p>Enterprise platform modernization for insurance data — ingestion framework design, Data Lake processing, Synapse analytics, Terraform IaC and proactive monitoring.</p><ul><li>Built reusable ingestion patterns across Integration and Consumer layers.</li><li>Automated Synapse infrastructure provisioning with Terraform.</li><li>Implemented Logic Apps–based monitoring and custom alerting.</li><li>Partnered with business teams on insurance data integration and modeling.</li></ul><div class="chips"><span>Synapse</span><span>Terraform</span><span>PySpark</span><span>Logic Apps</span><span>Azure OpenAI</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">AUG — NOV 2024</div><div class="timeline-card"><div class="role-top"><div><span class="role-kicker">SEASPAN SHIP MANAGEMENT · CONSULTING ENGAGEMENT</span><h3>Solution Architect</h3></div></div><p>Designed a Microsoft Fabric Medallion architecture to migrate and process IoT data from Azure SQL into a modern Lakehouse.</p><div class="chips"><span>Fabric</span><span>Lakehouse</span><span>Spark</span><span>IoT</span><span>Data Warehouse</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUL 2019 — APR 2022</div><div class="timeline-card"><div class="role-top"><div><span class="role-kicker">INVESTORCOM INC.</span><h3>Jr. ETL & Data Developer → Software Developer</h3></div></div><p>Modernized ETL and application workflows for financial-services clients, including cloud migration and large-file processing.</p><div class="impact-row"><span><strong>43%</strong> performance improvement</span><span><strong>80%</strong> less manual validation</span></div><div class="chips"><span>ADF</span><span>C#</span><span>SQL</span><span>Azure Storage</span><span>.NET</span></div></div></article>
+        <article class="timeline-item compact reveal"><div class="timeline-marker"></div><div class="timeline-date">2017 — 2019</div><div class="timeline-card"><div class="role-top"><div><span class="role-kicker">CO-OP EXPERIENCE</span><h3>Cogeco Peer 1 · Finastra · West Corporation</h3></div></div><p>SQL/ETL analytics, Salesforce migration, SSIS/SSRS, Azure SQL, QA automation, web analytics and cloud deployment.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="projects">
+      <div class="section-head reveal"><span class="command">$ git log --selected</span><h2>Selected work & <span>public builds.</span></h2><p>Real engineering themes from enterprise delivery and personal experimentation.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-feature reveal">
+          <div class="project-top"><span class="project-num">01</span><a href="https://github.com/bsladania/DatabricksRAGCopilot" target="_blank" rel="noreferrer" aria-label="Open Databricks RAG Copilot on GitHub">↗</a></div>
+          <div class="project-visual rag-visual"><div class="rag-doc">RUNBOOK<br><small>chunk · embed · index</small></div><span>→</span><div class="rag-agent">AGENT<br><small>route · retrieve · reason</small></div><span>→</span><div class="rag-answer">SQL + FIX<br><small>grounded response</small></div></div>
+          <span class="mini-label">PUBLIC GITHUB · GENAI + DATA ENGINEERING</span><h3>Databricks RAG Copilot</h3><p>A retrieval-augmented, agent-based assistant for enterprise runbooks that can retrieve operational knowledge, generate SQL validation queries and structure pipeline troubleshooting guidance.</p><div class="chips"><span>Databricks</span><span>Vector Search</span><span>Delta Lake</span><span>PySpark</span><span>LLM</span></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="project-top"><span class="project-num">02</span><span class="case-label">ENTERPRISE CASE</span></div>
+          <div class="architecture-mini"><div>Sources</div><b>→</b><div>Data Lake</div><b>→</b><div>Integration</div><b>→</b><div>Consumer</div></div>
+          <span class="mini-label">SGI CANADA · ENTERPRISE MODERNIZATION</span><h3>Scalable ingestion + observability framework</h3><p>Reusable Azure/Synapse patterns for multi-source ingestion, layered processing, infrastructure automation and proactive pipeline monitoring.</p><div class="chips"><span>Synapse</span><span>Terraform</span><span>Logic Apps</span><span>PySpark</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-num">03</span><span class="case-label">ARCHITECTURE CASE</span></div>
+          <div class="medallion"><div><i>B</i><span>Bronze</span></div><b>→</b><div><i>S</i><span>Silver</span></div><b>→</b><div><i>G</i><span>Gold</span></div></div>
+          <span class="mini-label">SEASPAN · MICROSOFT FABRIC</span><h3>IoT Medallion Lakehouse</h3><p>Fabric architecture for moving Azure SQL IoT data through structured Bronze, Silver and Gold layers using Spark notebooks and orchestrated data pipelines.</p><div class="chips"><span>Fabric</span><span>Lakehouse</span><span>Spark</span><span>IoT</span></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="project-top"><span class="project-num">04</span><a href="https://github.com/bsladania/insurance-claims-lakehouse-databricks" target="_blank" rel="noreferrer">↗</a></div>
+          <div class="repo-visual"><span>◈</span><strong>insurance-claims-<br>lakehouse-databricks</strong><small>public notebook repository</small></div>
+          <span class="mini-label">PUBLIC GITHUB</span><h3>Insurance Claims Lakehouse</h3><p>A public Databricks notebook repository focused on an insurance-claims lakehouse implementation.</p><div class="chips"><span>Databricks</span><span>Jupyter</span><span>Lakehouse</span></div>
+        </article>
+      </div>
+      <a class="github-strip reveal" href="https://github.com/bsladania" target="_blank" rel="noreferrer"><div><span>GITHUB PROFILE</span><strong>23 public repositories</strong></div><p>Explore data, cloud, AI and software experiments.</p><b>View all ↗</b></a>
+    </section>
+
+    <section class="section content-section" id="credentials">
+      <div class="section-head reveal"><span class="command">$ credentials --list</span><h2>Continuous learning, <span>production mindset.</span></h2><p>Cloud, data engineering and platform credentials alongside ongoing university study.</p></div>
+      <div class="credentials-grid">
+        <div class="cert-stack reveal">
+          <article class="cert"><span class="cert-logo ms">M</span><div><small>MICROSOFT</small><strong>Fabric Analytics Engineer Associate</strong></div></article>
+          <article class="cert"><span class="cert-logo ms">M</span><div><small>MICROSOFT</small><strong>Azure Data Engineer Associate</strong></div></article>
+          <article class="cert"><span class="cert-logo db">D</span><div><small>DATABRICKS</small><strong>Data Engineer Professional</strong></div></article>
+          <article class="cert"><span class="cert-logo db">D</span><div><small>DATABRICKS</small><strong>Data Engineer Associate</strong></div></article>
+          <article class="cert"><span class="cert-logo az">A</span><div><small>MICROSOFT</small><strong>Azure Developer Associate</strong></div></article>
+          <article class="cert"><span class="cert-logo az">A</span><div><small>MICROSOFT</small><strong>DevOps Engineer Expert</strong></div></article>
+        </div>
+        <div class="education-card reveal delay-1">
+          <span class="mini-label">EDUCATION</span>
+          <div class="school"><span class="school-year">2025 →</span><div><h3>McMaster University</h3><p>Bachelor of Software Engineering · Part-time Online</p></div></div>
+          <div class="school"><span class="school-year">2018</span><div><h3>Sheridan College</h3><p>Software Development & Network Engineering · High Honours</p></div></div>
+          <div class="edu-code"><span>while</span> (learning) { <b>build</b>(); <b>ship</b>(); <b>improve</b>(); }</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-glow"></div>
+      <div class="contact-inner reveal">
+        <span class="command">$ contact --open</span>
+        <h2>Let’s build the data platform <span>people trust.</span></h2>
+        <p>For senior data engineering, solution architecture and modern data platform conversations.</p>
+        <div class="contact-actions"><a class="primary-btn large" href="mailto:Bikramjeetsingh@live.com">Email me ↗</a><a class="secondary-btn" href="https://www.linkedin.com/in/bikramjeet-ladania" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="secondary-btn" href="https://github.com/bsladania" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div><span class="brand-dot"></span> BIKRAMJEET LADANIA</div><p>Senior Data Engineer · Kitchener, Canada</p><p>© 2026 · Built as a data engineer would.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
