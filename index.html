@@ -39,7 +39,7 @@
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="status-dot"></span> Senior Data Engineer · Kitchener, Ontario</div>
         <h1>I build the systems between <em>raw data</em> and <span>trusted decisions.</span></h1>
-        <p class="hero-text">I’m Bikramjeet. I design and modernize enterprise data platforms across Azure, Databricks and Microsoft Fabric with a lot of attention to the parts that matter after launch: reusable ingestion, data quality, observability, infrastructure as code and production support.</p>
+        <p class="hero-text">I’m Bikramjeet. I design and modernize enterprise data platforms across Azure, Databricks and Microsoft Fabric — with a lot of attention to the parts that matter after launch: reusable ingestion, data quality, observability, infrastructure as code and production support.</p>
         <div class="hero-actions">
           <a class="primary-link" href="#work">Explore selected work <span>↓</span></a>
           <a class="secondary-link" href="https://github.com/bsladania" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
@@ -106,9 +106,38 @@ trusted.write.format(<span class="red">"delta"</span>).saveAsTable(<span class="
       </div>
     </section>
 
-    <section class="trust-strip">
-      <div class="shell trust-inner">
-        <span>ENTERPRISE DATA ENGINEERING</span><i></i><span>AZURE SYNAPSE</span><i></i><span>DATABRICKS</span><i></i><span>MICROSOFT FABRIC</span><i></i><span>TERRAFORM</span><i></i><span>PYSPARK</span><i></i><span>OBSERVABILITY</span>
+    <section class="trust-strip ecosystem-band" aria-label="Technology ecosystem">
+      <div class="shell ecosystem-wrap">
+        <div class="ecosystem-intro">
+          <span class="ecosystem-kicker">MY WORKING ECOSYSTEM</span>
+          <strong>One platform mindset.<br><em>Different tools for different jobs.</em></strong>
+        </div>
+        <div class="ecosystem-rail">
+          <div class="tech-brand azure-brand">
+            <span class="tech-logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M15 3 6 22h7l4-9 5 9h7L18 3z"/><path class="cut" d="M13 22h11l3 6H10z"/></svg></span>
+            <div><b>Azure</b><small>orchestrate + operate</small></div>
+          </div>
+          <div class="tech-brand db-brand">
+            <span class="tech-logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m16 4 12 6-12 6L4 10z"/><path d="m6 15 10 5 10-5"/><path d="m6 21 10 5 10-5"/></svg></span>
+            <div><b>Databricks</b><small>transform + lakehouse</small></div>
+          </div>
+          <div class="tech-brand fabric-brand">
+            <span class="tech-logo fabric-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div><b>Microsoft Fabric</b><small>serve + analyze</small></div>
+          </div>
+          <div class="tech-brand terraform-brand">
+            <span class="tech-logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 5l9 5v10l-9-5zM16 11l9 5v10l-9-5zM16 1l9 5v8l-9-5z"/></svg></span>
+            <div><b>Terraform</b><small>repeatable infrastructure</small></div>
+          </div>
+          <div class="tech-brand spark-brand">
+            <span class="tech-logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M18 3 8 17h8l-2 12 10-15h-8z"/></svg></span>
+            <div><b>PySpark</b><small>distributed processing</small></div>
+          </div>
+          <div class="tech-brand github-brand">
+            <span class="tech-logo code-mark" aria-hidden="true">&lt;/&gt;</span>
+            <div><b>GitHub + Git</b><small>version + delivery</small></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -122,11 +151,27 @@ trusted.write.format(<span class="red">"delta"</span>).saveAsTable(<span class="
       </div>
 
       <div class="case-layout reveal">
-        <div class="case-nav" role="tablist" aria-label="Selected work">
-          <button class="case-tab active" data-case="sgi" role="tab" aria-selected="true"><span>01</span><div><small>SGI CANADA · ENTERPRISE</small><strong>Platform modernization</strong></div><b>↗</b></button>
-          <button class="case-tab" data-case="rag" role="tab" aria-selected="false"><span>02</span><div><small>PUBLIC GITHUB · APPLIED AI</small><strong>Databricks RAG Copilot</strong></div><b>↗</b></button>
-          <button class="case-tab" data-case="seaspan" role="tab" aria-selected="false"><span>03</span><div><small>SEASPAN · FABRIC</small><strong>IoT Medallion Lakehouse</strong></div><b>↗</b></button>
-          <button class="case-tab" data-case="investorcom" role="tab" aria-selected="false"><span>04</span><div><small>INVESTORCOM · ETL</small><strong>Workflow modernization</strong></div><b>↗</b></button>
+        <div class="case-nav case-switcher" role="tablist" aria-label="Selected work">
+          <button class="case-tab active case-blue" data-case="sgi" role="tab" aria-selected="true">
+            <span class="case-icon" aria-hidden="true">⌁</span>
+            <div class="case-tab-copy"><small>SGI CANADA · ENTERPRISE</small><strong>Platform modernization</strong><em>Azure · Synapse · Terraform</em></div>
+            <span class="case-number">01</span>
+          </button>
+          <button class="case-tab case-coral" data-case="rag" role="tab" aria-selected="false">
+            <span class="case-icon" aria-hidden="true">✦</span>
+            <div class="case-tab-copy"><small>PUBLIC GITHUB · APPLIED AI</small><strong>Databricks RAG Copilot</strong><em>RAG · Vector Search · Agents</em></div>
+            <span class="case-number">02</span>
+          </button>
+          <button class="case-tab case-violet" data-case="seaspan" role="tab" aria-selected="false">
+            <span class="case-icon medallion-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div class="case-tab-copy"><small>SEASPAN · MICROSOFT FABRIC</small><strong>IoT Medallion Lakehouse</strong><em>Fabric · Spark · Lakehouse</em></div>
+            <span class="case-number">03</span>
+          </button>
+          <button class="case-tab case-green" data-case="investorcom" role="tab" aria-selected="false">
+            <span class="case-icon" aria-hidden="true">↗</span>
+            <div class="case-tab-copy"><small>INVESTORCOM · ETL</small><strong>Workflow modernization</strong><em>ADF · SQL · Automation</em></div>
+            <span class="case-number">04</span>
+          </button>
         </div>
 
         <div class="case-stage">
@@ -140,7 +185,7 @@ trusted.write.format(<span class="red">"delta"</span>).saveAsTable(<span class="
             </div>
             <div class="case-columns">
               <div><small>WHAT I OWNED</small><ul><li>Reusable ingestion patterns across layered data processing</li><li>Terraform-based Synapse infrastructure provisioning</li><li>Validation, monitoring and production issue investigation</li><li>Business collaboration on insurance data integration and modeling</li></ul></div>
-              <div><small>ENGINEERING PRINCIPLE</small><blockquote>“The pipeline should be easy to reuse when things go right and easy to understand when they don’t.”</blockquote></div>
+              <div><small>ENGINEERING PRINCIPLE</small><blockquote>“The pipeline should be easy to reuse when things go right — and easy to understand when they don’t.”</blockquote></div>
             </div>
             <div class="case-stack"><span>Azure Synapse</span><span>Terraform</span><span>PySpark</span><span>Logic Apps</span><span>SQL Pool</span></div>
           </article>
@@ -154,7 +199,7 @@ trusted.write.format(<span class="red">"delta"</span>).saveAsTable(<span class="
             </div>
             <div class="case-columns">
               <div><small>HOW IT WORKS</small><ul><li>Parse and chunk enterprise runbook PDFs</li><li>Store chunks in Delta and index them for semantic retrieval</li><li>Route requests to retrieval, SQL-generation or recovery-summary tools</li><li>Serve a context-aware response through a Databricks-hosted model</li></ul></div>
-              <div><small>WHY I BUILT IT</small><blockquote>“AI is more useful to me when it shortens a real engineering task - not when it is added just to make a demo look smarter.”</blockquote></div>
+              <div><small>WHY I BUILT IT</small><blockquote>“AI is more useful to me when it shortens a real engineering task — not when it is added just to make a demo look smarter.”</blockquote></div>
             </div>
             <div class="case-stack"><span>Databricks</span><span>Vector Search</span><span>Delta Lake</span><span>PySpark</span><span>Model Serving</span><span>RAG</span></div>
           </article>
@@ -176,7 +221,7 @@ trusted.write.format(<span class="red">"delta"</span>).saveAsTable(<span class="
           <article class="case-panel" id="case-investorcom" data-panel="investorcom">
             <div class="case-topline"><span>CASE 04</span><span class="case-badge neutral-badge">ETL · Financial services</span></div>
             <h3>Modernizing workflows so teams spend less time waiting and checking.</h3>
-            <p class="case-lede">Earlier in my career at InvestorCOM, I worked close to the operational side of data: migration, batch processing, validation and application workflows. Two improvements still describe how I like to work - measurable performance gains and less repetitive manual checking.</p>
+            <p class="case-lede">Earlier in my career at InvestorCOM, I worked close to the operational side of data: migration, batch processing, validation and application workflows. Two improvements still describe how I like to work — measurable performance gains and less repetitive manual checking.</p>
             <div class="impact-pair"><div><strong>43%</strong><span>system performance improvement</span></div><div><strong>80%</strong><span>manual data-validation time reduced</span></div></div>
             <div class="case-columns">
               <div><small>WORK INCLUDED</small><ul><li>On-prem ETL migration to Azure Data Factory</li><li>Large-file processing from Blob Storage</li><li>Data consolidation and address-correction workflows</li><li>Custom validation tooling and automation</li></ul></div>
@@ -218,12 +263,45 @@ trusted.write.format(<span class="red">"delta"</span>).saveAsTable(<span class="
         <span class="section-index">03 / ENGINEERING STACK</span>
         <div><h2>A toolchain organized by the job it needs to do.</h2><p>I prefer showing technology in context. These are the tools I use across the lifecycle of a modern data platform.</p></div>
       </div>
-      <div class="stack-map reveal">
-        <article class="stack-column"><div class="stack-num">01</div><span class="stack-icon azure-icon">A</span><small>INGEST + ORCHESTRATE</small><h3>Move data reliably</h3><p>Reusable, parameterized movement from source systems into cloud storage and processing layers.</p><div class="chips"><span>Azure Data Factory</span><span>Synapse Pipelines</span><span>ADLS</span><span>Azure Storage</span></div></article>
-        <article class="stack-column"><div class="stack-num">02</div><span class="stack-icon db-icon">△</span><small>TRANSFORM + MODEL</small><h3>Make data trustworthy</h3><p>Distributed processing, Delta patterns and SQL modeling that turn raw records into useful datasets.</p><div class="chips"><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>SQL</span><span>Lakehouse</span></div></article>
-        <article class="stack-column"><div class="stack-num">03</div><span class="stack-icon fabric-icon">F</span><small>SERVE + ANALYZE</small><h3>Shape for consumption</h3><p>Warehouse, SQL and Fabric patterns for analytics-ready data products and downstream reporting.</p><div class="chips"><span>Microsoft Fabric</span><span>Dedicated SQL Pool</span><span>Azure SQL</span><span>Warehouse</span></div></article>
-        <article class="stack-column"><div class="stack-num">04</div><span class="stack-icon git-icon">⑂</span><small>OPERATE + DELIVER</small><h3>Keep it supportable</h3><p>IaC, CI/CD, monitoring and secrets management so the platform is repeatable and observable.</p><div class="chips"><span>Terraform</span><span>Git</span><span>Azure DevOps</span><span>Logic Apps</span><span>Key Vault</span></div></article>
-        <article class="stack-column ai-column"><div class="stack-num">05</div><span class="stack-icon ai-icon">AI</span><small>APPLIED AI</small><h3>Use AI where it helps</h3><p>RAG, retrieval and LLM-assisted workflows for troubleshooting, validation and operational knowledge.</p><div class="chips"><span>Azure OpenAI</span><span>Vector Search</span><span>RAG</span><span>Agents</span><span>Model Serving</span></div></article>
+      <div class="stack-map stack-bento reveal">
+        <article class="stack-column stack-ingest">
+          <div class="stack-card-head"><span class="stack-icon azure-icon">A</span><span class="stack-num">01</span></div>
+          <small>INGEST + ORCHESTRATE</small><h3>Move data without creating a maze.</h3>
+          <p>Reusable, parameterized movement from source systems into cloud storage and processing layers.</p>
+          <div class="pipeline-visual" aria-hidden="true">
+            <div class="source-cluster"><span>SQL</span><span>API</span><span>FILE</span></div><i>→</i><div class="service-node azure-node">ADF</div><i>→</i><div class="lake-node">ADLS<small>raw</small></div>
+          </div>
+          <div class="chips"><span>Azure Data Factory</span><span>Synapse Pipelines</span><span>ADLS</span><span>Azure Storage</span></div>
+        </article>
+
+        <article class="stack-column stack-transform">
+          <div class="stack-card-head"><span class="stack-icon db-icon db-stack-mark"><i></i><i></i><i></i></span><span class="stack-num">02</span></div>
+          <small>TRANSFORM + MODEL</small><h3>Turn raw records into data people can trust.</h3>
+          <p>Spark, Delta and SQL patterns for cleaning, conforming and modeling data at scale.</p>
+          <div class="notebook-visual" aria-hidden="true"><div class="notebook-bar"><span>silver_transform.py</span><b>▸ run</b></div><code><em>bronze</em> → validate() → clean()<br><strong>silver.write</strong>(format=<i>"delta"</i>)</code><div class="medallion-row"><span>B</span><i>→</i><span>S</span><i>→</i><span>G</span></div></div>
+          <div class="chips"><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>SQL</span><span>Lakehouse</span></div>
+        </article>
+
+        <article class="stack-column stack-serve">
+          <div class="stack-card-head"><span class="stack-icon fabric-icon fabric-mini"><i></i><i></i><i></i></span><span class="stack-num">03</span></div>
+          <small>SERVE + ANALYZE</small><h3>Shape data for the people using it.</h3>
+          <p>Warehouse, SQL and Fabric patterns for analytics-ready products and reporting.</p>
+          <div class="serve-visual" aria-hidden="true"><div class="serve-db">DATA</div><span></span><div class="serve-bars"><i></i><i></i><i></i><i></i></div></div>
+          <div class="chips"><span>Microsoft Fabric</span><span>SQL Pool</span><span>Azure SQL</span><span>Warehouse</span></div>
+        </article>
+
+        <article class="stack-column stack-operate">
+          <div class="stack-card-head"><span class="stack-icon git-icon">⌘</span><span class="stack-num">04</span></div>
+          <small>OPERATE + DELIVER</small><h3>Make production boring—in a good way.</h3>
+          <p>IaC, CI/CD, monitoring and secrets management so changes are repeatable and failures are visible.</p>
+          <div class="ops-visual" aria-hidden="true"><div class="ops-code"><span>resource</span> "synapse" {<br>&nbsp;&nbsp;monitoring = <b>true</b><br>}</div><div class="ops-health"><span><i></i> pipeline healthy</span><span><i></i> alerts enabled</span><span><i></i> secrets secured</span></div></div>
+          <div class="chips"><span>Terraform</span><span>Git</span><span>Azure DevOps</span><span>Logic Apps</span><span>Key Vault</span></div>
+        </article>
+
+        <article class="stack-column stack-ai ai-column">
+          <div class="ai-copy"><div class="stack-card-head"><span class="stack-icon ai-icon">AI</span><span class="stack-num">05</span></div><small>APPLIED AI</small><h3>Use AI where it shortens a real engineering task.</h3><p>RAG, retrieval and LLM-assisted workflows for troubleshooting, validation and operational knowledge—not AI for the sake of a badge.</p><div class="chips"><span>Azure OpenAI</span><span>Vector Search</span><span>RAG</span><span>Agents</span><span>Model Serving</span></div></div>
+          <div class="rag-visual" aria-label="RAG workflow visual"><div class="rag-query"><small>ENGINEER</small><b>“Why did validation fail?”</b></div><i>→</i><div class="rag-tool"><span>01</span><b>Retrieve runbook</b><small>Vector Search</small></div><i>→</i><div class="rag-tool"><span>02</span><b>Check context</b><small>SQL + metadata</small></div><i>→</i><div class="rag-answer"><span>✦</span><b>Grounded answer</b><small>with next steps</small></div></div>
+        </article>
       </div>
     </section>
 
